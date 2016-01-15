@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="table.css">
+<title>Page Title</title>
+</head>
+<body>
+
+<div ng-app="coursePlanner" ng-controller="coursePlannerCtrl">
+	<div id="container">
+		<h2 style="color:#86E2D5;">MY COURSE PLANNER</h2>
+		<p><input type="text" maxlength="20" ng-model="course" placeholder="Search Course Id"></p>
+		<div id="control-div">
+			<button ng-click='addCourse()'>Search</button>
+			<button ng-click='changeSchedule()' style="width:120px;">{{changeScheduleLabel}}</button>
+			<button ng-click='removeAll()'>Remove All</button>
+		</div>
+		<div id="table-div">
+			<table id="timetable" border="0" cellspacing="0" cellpadding="0">
+				<tr style="background-color:#86E2D5;color: white;" >
+					<th></th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+				</tr>
+				<tbody id="timetable-body">
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<script src="coursePlanner.js"></script>
+<script src="coursePlannerCtrl.js"></script>
+</body>
+</html>

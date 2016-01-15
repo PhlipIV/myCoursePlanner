@@ -1,0 +1,1 @@
+var coursePlanner = angular.module('coursePlanner', []);

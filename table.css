@@ -1,0 +1,86 @@
+@font-face{
+	font-family: fontinSans;
+	src: url(Fontin_Sans_R_45b.otf);
+}
+
+table td{
+    width:70px;
+    text-align: center;
+}
+
+table th{
+	height:30px;
+}
+
+table tr{
+	height:17px;
+}
+
+.timeColumn{
+	color: #86E2D5;
+	width: 50px;
+}
+
+#timetable{
+	border-collapse: collapse;
+	margin:10px auto;
+}
+
+.course{
+	/*background-color: yellow;*/
+	color: white;
+	width:100%;
+	height:100%;
+	display:inline-block;
+	font-size: small;
+	padding-top: 5px;
+}
+
+.course span{
+	display: block;
+}
+
+.grey {
+	background-color: #ECF0F1;
+}
+
+button {
+	border: 2px solid #86E2D5;
+	background-color: white;
+    border-radius: 25px;
+    color: #86E2D5;
+}
+
+button:focus {
+	outline:0;
+}
+
+button:active{
+	background-color: #86E2D5;
+	color: white;
+}
+
+input {
+	border: 2px solid #86E2D5;
+	border-radius: 25px;
+	text-indent: 10px;
+	width: 200px;
+	font-size: medium;
+}
+
+input:focus {
+	outline:0;
+}
+
+#control-div{
+	display: inline-block;
+}
+
+#container{
+	text-align: center;
+	font-family: fontinSans;
+}
+
+#table-div{
+	margin:0 auto;
+}
